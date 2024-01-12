@@ -1,0 +1,138 @@
+@media (max-width: 800px) {
+
+    #nav {
+        background-color: rgba(0, 0, 0, 0.8);
+        height: auto;
+    }
+
+    #nav a {
+        color: #fff;
+    }
+
+    #nav .navbar-brand {
+        margin-left: -2px;
+    }
+
+    #nav > .container {
+        flex-direction: column;
+    }
+
+    #nav .navbar-brand {
+        display: flex;
+        padding: 20px;
+        width: 100%;
+        justify-content: space-between; 
+    }
+
+    #nav .navbar-brand .mobile-navbar-icons {
+        display: flex;
+        list-style-type: none;
+        justify-content: flex-end;
+    }
+
+    #nav .hamburger-menu {
+        display: block;
+        color: #fff;
+    }
+
+    #nav .navbar-brand .mobile-navbar-icons li {
+        padding: 0 20px;
+    }
+
+    #nav .navbar-menu {
+        flex-direction: column;
+        width: 100%;
+        /* display: none; */
+        height: 0px;
+        transition: 0.5s;
+        overflow: hidden;
+    }
+
+    #nav .navbar-menu.active {
+        height: 250px;
+    }
+
+    #nav .navbar-menu li {
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    #nav.bg {
+        background-color: #4169E1;
+    }
+
+    #nav .navbar-menu li:hover {
+        background-color: rgba(242,243,244, 0.3);
+    }
+
+
+    #nav .navbar-icons {
+        display: none;
+    }
+
+    /* Product Detail */
+    #product-detail {
+        padding: 0 10px;
+    }
+
+    #product-detail > .container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+
+    /* Product */
+    .products .cards .card {
+        flex-basis: 45%;
+    }
+
+    /* Collection */
+    #collection > .container {
+        flex-direction: column;
+    }
+
+    /* Blog */
+    #blog .cards {
+        flex-direction: column;
+        margin: 0 20px;
+    }
+
+    #blog .cards .card {
+        margin: 10px 0;
+    }
+
+    /* Footer */
+    #footer > .container {
+        flex-direction: column;
+    }
+
+    #footer ul {
+        margin: 15px 0;
+    }
+
+    #slider img {
+        height: 400px;
+        object-position: 100% 50%;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    /* Product */
+    .products .cards {
+        flex-direction: column;
+    }
+
+    .products .cards .card {
+        flex-basis: 98%;
+    }
+
+    /* Blog */
+
+    #blog .cards {
+        flex-direction: column;
+        margin: 0 10px;
+    }
+}
